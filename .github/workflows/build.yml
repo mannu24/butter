@@ -24,4 +24,5 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: "cd /var/www/html/butter && ./.scripts/deploy.sh"
+          script: "cd /var/www/html/butter"
+          script: "sudo git pull origin main"
