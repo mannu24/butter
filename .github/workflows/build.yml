@@ -24,4 +24,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: "cd /var/www/html && git reset --hard && git pull origin main"
+          script: "cd /var/www/html && ./.scripts/deploy.sh"
